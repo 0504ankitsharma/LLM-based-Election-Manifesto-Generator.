@@ -47,6 +47,6 @@ def generate_campaign_details(party, candidate, constituency, focus):
         output_variables=['campaign_slogan', 'manifesto_items', 'constituency_info']
     )
 
-    response = chain({'party': party, 'candidate': candidate, 'constituency': constituency, 'focus': focus})
+    response = chain ({'party': party, 'candidate': candidate, 'constituency': constituency, 'focus': focus})
 
     return response
