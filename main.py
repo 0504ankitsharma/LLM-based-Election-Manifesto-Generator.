@@ -2,12 +2,8 @@ import streamlit as st
 import langchain_helper
 import os
 
-
-# Set page title and favicon
 st.set_page_config(page_title="Election Manifesto and Constituency Detail Generator", page_icon="🇮🇳")
 
-
-# Custom CSS for styling
 st.markdown(
     """
     <style>
@@ -35,16 +31,13 @@ st.markdown(
 )
 
 def generate_campaign_page():
-    # Set the title of the app
     st.title("Indian Election Manifesto and Constituency Detail Generator")
 
-    # Add input fields for user input
     party = st.sidebar.text_input("Party Name")
     candidate_name = st.sidebar.text_input("Candidate Name")
     constituency = st.sidebar.text_input("Constituency")
     campaign_focus = st.sidebar.text_input("Campaign Focus Point")
 
-    # Generate the campaign details when the button is clicked
     if st.sidebar.button("Generate Campaign"):
         if party and candidate_name and constituency and campaign_focus:
             response = langchain_helper.generate_campaign_details(party, candidate_name, constituency, campaign_focus)
@@ -75,7 +68,6 @@ def generate_campaign_page():
             st.error("Please fill in all the details.")
 
 def view_saved_campaigns_page():
-    # Add an option to view saved campaigns
     saved_files = [file for file in os.listdir() if file.endswith("_campaign.txt")]
     if saved_files:
         selected_file = st.sidebar.selectbox("Select a campaign file", saved_files)
@@ -84,7 +76,6 @@ def view_saved_campaigns_page():
     else:
         st.sidebar.write("No saved campaigns found.")
 
-# Page selection
 page = st.sidebar.radio("Navigation", ["Generate Campaign", "View Saved Campaigns"])
 
 if page == "Generate Campaign":
