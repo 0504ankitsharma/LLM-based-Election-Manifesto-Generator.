@@ -19,13 +19,13 @@ The Indian Election Manifesto Generator is a web application built with Streamli
 git clone https://github.com/yourusername/indian-election-campaign-generator.git
 ```
 
-###Install Dependencies
+### Install Dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-###Create a .env File
+### Create a .env File
 
 ```sh
 Create a .env file in the root directory with your OpenAI API key:
@@ -33,7 +33,7 @@ Create a .env file in the root directory with your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-###Run the Streamlit App
+### Run the Streamlit App
 
 ```sh
 streamlit run main.py
