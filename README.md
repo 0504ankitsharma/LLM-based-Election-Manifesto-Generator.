@@ -8,7 +8,7 @@ The Indian Election Manifesto Generator is a web application built with Streamli
 
 - **User Input**: Enter party name, candidate name, constituency, and campaign focus point.
 - **Campaign Generation**: Generate campaign slogans, manifesto points, and constituency information.
-- **Data Privacy**: Secure storage of the OpenAI API key in a .env file, ignored in version control via .gitignore.
+- **Api-key Hiding **: Secure storage of the OpenAI API key in a .env file, ignored in version control via .gitignore.
 - **Dynamic UI**: Interactive and dynamic user interface provided by Streamlit for generating campaign details.
 
 ## Setup
