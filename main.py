@@ -9,21 +9,21 @@ st.markdown(
     <style>
     .sidebar .sidebar-content {
         background-image: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808);
-        color: #000000; /* Change text color to black */
+        color: #000000; 
     }
     .sidebar .sidebar-content .block-container {
         padding: 20px;
     }
     .sidebar .sidebar-content .block-container .stButton>button {
         background-color: #138808;
-        color: #FFFFFF; /* Change button text color to white */
+        color: #FFFFFF; 
     }
     .sidebar .sidebar-content .stTextInput>div>div>input {
-        background-color: #FFFFFF; /* Change input background to white */
-        color: #000000; /* Change input text color to black */
+        background-color: #FFFFFF; 
+        color: #000000; 
     }
     .stTextInput>div>div>label {
-        color: #000000; /* Change input label color to black */
+        color: #000000; 
     }
     </style>
     """,
