@@ -1,7 +1,5 @@
 # Indian Election Manifesto Generator
 
-![Logo](path/to/logo.png)
-
 ## Overview
 
 The Indian Election Manifesto Generator is a web application built with Streamlit and LangChain that generates election campaign details for Indian Lok Sabha elections. Utilizing OpenAI's GPT model, this application helps in creating campaign slogans, manifesto points, and constituency information based on user inputs.
