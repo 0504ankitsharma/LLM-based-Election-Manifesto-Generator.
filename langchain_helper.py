@@ -4,10 +4,8 @@ from langchain.chains import LLMChain, SequentialChain
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Ensure the environment variable is set
 openai_api_key = os.getenv('OPENAI_API_KEY')
 if not openai_api_key:
     raise ValueError("OPENAI_API_KEY environment variable not set")
