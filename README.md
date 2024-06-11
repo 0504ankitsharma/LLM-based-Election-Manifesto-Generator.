@@ -17,41 +17,25 @@ The Indian Election Manifesto Generator is a web application built with Streamli
 
 ```sh
 git clone https://github.com/yourusername/indian-election-campaign-generator.git
+```
 
-Install Dependencies
+###Install Dependencies
 
-sh
-
+```sh
 pip install -r requirements.txt
+```
 
-Create a .env File
+###Create a .env File
 
+```sh
 Create a .env file in the root directory with your OpenAI API key:
 
-makefile
-
 OPENAI_API_KEY=your_openai_api_key
+```
 
-Run the Streamlit App
+###Run the Streamlit App
 
-sh
-
+```sh
 streamlit run main.py
+```
 
-Usage
-
-    Input Details: Enter the required details in the sidebar (party name, candidate name, constituency, and campaign focus point).
-    Generate Campaign: Click on the "Generate Campaign" button to create campaign details.
-    View Results: See the generated campaign slogans, manifesto points, and constituency information on the main panel.
-    Save Campaign: Optionally, save the campaign details to a text file.
-
-Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
-    Make your changes.
-    Commit your changes (git commit -m 'Add some feature').
-    Push to the branch (git push origin feature-branch).
-    Open a pull request.
